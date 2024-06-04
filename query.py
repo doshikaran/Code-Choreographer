@@ -113,14 +113,13 @@ Please review the code below for potential issues and opportunities for improvem
 - Discuss the complexity of the code and suggest ways to reduce cognitive load when understanding the code.
 - Example: Identify complex conditional logic that could be simplified.
 - Example: Suggest decomposition of complex functions into simpler, single-purpose functions.
-
 **Detection of Code Smells:**
-- **Duplicate Code:** Identify and recommend ways to abstract duplicated logic or data into reusable components.
-- **Improper Names:** Point out variables, functions, or classes with names that do not clearly describe their purpose.
-- **Long Functions, Methods, Classes:** Highlight overly long code blocks that could be broken into smaller, more focused functions.
-- **Long Parameter Lists:** Suggest reducing the number of parameters for methods through object encapsulation or parameter objects.
-- **Inconsistent Naming:** Identify and correct inconsistencies in naming conventions across the codebase.
-- **Data Clumps:** Recommend restructuring related data fields and variables that often appear together into more coherent data structures.
+- **Duplicate Code:** Identify and recommend ways to abstract duplicated logic or data into reusable components, including line numbers where duplication occurs.
+- **Improper Names:** Point out variables, functions, or classes with names that do not clearly describe their purpose, including line numbers where they appear.
+- **Long Functions, Methods, Classes:** Highlight overly long code blocks that could be broken into smaller, more focused functions, including line numbers.
+- **Long Parameter Lists:** Suggest reducing the number of parameters for methods through object encapsulation or parameter objects, including line numbers where applicable.
+- **Inconsistent Naming:** Identify and correct inconsistencies in naming conventions across the codebase, including line numbers.
+- **Data Clumps:** Recommend restructuring related data fields and variables that often appear together into more coherent data structures, including line numbers where applicable.
 
 **Adherence to Best Practices:**
 - Evaluate the code's conformity to industry best practices and provide advice for alignment.

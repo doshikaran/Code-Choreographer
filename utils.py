@@ -19,7 +19,6 @@ EXTENSION_TO_LANGUAGE_MAP = {
     ".tsx": "typescript xml",
 }
 
-
 def load_environment_variables(file_path: str) -> None:
     if os.path.exists(file_path):
         with open(file_path) as f:
@@ -28,14 +27,11 @@ def load_environment_variables(file_path: str) -> None:
                     key, value = line.strip().split("=")
                     os.environ[key] = value
 
-
 def set_environment_variables() -> None:
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-
 def configure_logging(log_file: str, level: int = logging.INFO) -> None:
     logging.basicConfig(filename=log_file, level=level)
-
 
 class TempDirContext:
     def __init__(self, temp_dir: str) -> None:

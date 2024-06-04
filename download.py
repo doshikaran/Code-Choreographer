@@ -1,7 +1,6 @@
 import display
 import streamlit as st
 
-
 def download_markdown(recommendations):
     if recommendations:
         st.download_button(

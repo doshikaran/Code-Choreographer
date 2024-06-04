@@ -1,6 +1,5 @@
 import os
 from typing import Iterable
-
 import streamlit as st
 from git import Repo
 
@@ -8,7 +7,6 @@ from git import Repo
 def list_code_files_in_repository(
     repo_url: str, extensions: list[str]
 ) -> Iterable[str]:
-    """Clone the GitHub repository and return a list of code files with the specified extensions."""
     local_path = clone_github_repository(repo_url)
     return get_all_files_in_directory(local_path, extensions)
 

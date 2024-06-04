@@ -1,19 +1,15 @@
 import re
 from typing import Optional
-
 import streamlit as st
 from utils import EXTENSION_TO_LANGUAGE_MAP
 
-
 def extension_to_language(file_extension: str) -> Optional[str]:
     return EXTENSION_TO_LANGUAGE_MAP.get(file_extension.lower(), None)
-
 
 def display_code(code: str, extension: str) -> None:
     language = extension_to_language(extension)
     markdown_code = f"```{language}\n{code}\n```"
     st.markdown(markdown_code)
-
 
 def escape_markdown(text: str) -> str:
     """Escape markdown characters in a string."""
